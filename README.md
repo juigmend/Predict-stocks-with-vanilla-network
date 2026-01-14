@@ -24,8 +24,8 @@ Then from the data, features and outcomes are extracted. Features are prices for
 The data is split into training and testing subsets. The training data is fed to an artificial neural network composed by two hidden layers with ReLU activation. The outcput layer is only one node, with sigmoid activation. The network is trained iteratively with the backpropagation technique, until it reaches the minimum error. The error is calculated with the "binary cross entropy" formula, which is appropriate for sigmoid activation. Also, the network is initialised with the Kaiming He technique, which is appropriate for ReLU. 
 
 A proof of concept is provided, with two modules:
-* data collection
-* training and testing
+* [data collection](https://github.com/juigmend/Predict-stocks-with-vanilla-network/blob/main/Web_Scraping_Data_Nasdaq_Europe.ipynb)
+* [training and testing](https://github.com/juigmend/Predict-stocks-with-vanilla-network/blob/main/ANN_predict_stocks_movement.ipynb)
 
 Spoiler alert: The system is not able to predict :/
 
