@@ -1,6 +1,6 @@
-# Project Title
+# Predict stocks
 
-Predict stocks (Building AI course project)
+Building AI course project
 
 ## Summary
 
