@@ -4,7 +4,7 @@ Predict stocks
 
 ## Summary
 
-Prediction of whether a stock's price will rise or decrease the following week.
+Predict whether a stock's price will rise or decrease the following week.
 
 ## Background
 
