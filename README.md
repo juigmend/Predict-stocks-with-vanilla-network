@@ -21,11 +21,17 @@ The user-defines parameters for the data to use such as market, segment, sector,
 The system collects stcoks' historical prices publicly available on the internet.
 Then it pre-processes the data to interpolate missing data with less consecutive missing points that 6 days per stock. Otherwise the data for the whole stock is removed.
 Then from the data, features and outcomes are extracted. Features are prices for all stocks during one week. The outcome is whether the price on the first day of the following week is higher or lower/equal than the first day of the current week. This is done for all weeks.
-The data is split into training and testing subsets. The training data is fed to an artificial neural network composed by two hidden layers with ReLU activation. The outcput layer is only one node, with sigmoid activation. The network is trained iteratively with the backpropagation technique, until it reaches the minimum error. The error is calculated with the "binary cross entropy" formula, which is appropriate for sigmoid activation. Also, the network is initialised with the Kaiming He technique, which is appropriate for ReLU.
+The data is split into training and testing subsets. The training data is fed to an artificial neural network composed by two hidden layers with ReLU activation. The outcput layer is only one node, with sigmoid activation. The network is trained iteratively with the backpropagation technique, until it reaches the minimum error. The error is calculated with the "binary cross entropy" formula, which is appropriate for sigmoid activation. Also, the network is initialised with the Kaiming He technique, which is appropriate for ReLU. 
+
+A proof of concept is provided, with two modules:
+* data collection
+* training and testing
+
+Spoiler alert: The system is not able to predict :/
 
 ## Challenges
 
-The described system was tested with different combinations of data (e.g., time-range, number and type of stocks, rescaling of prices) and network parameters (E.g., ReLU leak, nodes per hidden layer, learning rate), but it is not able to predict. It either converges in only ones, only zeros, or seemingly random outcomes. 
+The described system was tested with different combinations of data (e.g., time-range, number and type of stocks, rescaling of prices) and network parameters (e.g., ReLU leak, nodes per hidden layer, learning rate), but it is not able to predict. It either converges in only ones, only zeros, or seemingly random outcomes. 
 
 ## What next?
 
