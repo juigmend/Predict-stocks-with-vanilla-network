@@ -1,10 +1,10 @@
 # Project Title
 
-Predict stocks
+Predict stocks (Building AI course project)
 
 ## Summary
 
-Predict whether a stock's price will rise or decrease the following week.
+The system predicts whether a stock's price will rise or decrease the following week. The user selects which stock will be predicted and, optionally, the characteristics of the data used to make the prediction.
 
 ## Background
 
@@ -18,9 +18,9 @@ The user-defines parameters for the data to use such as market, segment, sector,
 
 ## Data sources and AI methods
 
-The system collects stcoks' historical prices publicly available on the internet.
-Then it pre-processes the data to interpolate missing data with less consecutive missing points that 6 days per stock. Otherwise the data for the whole stock is removed.
-Then from the data, features and outcomes are extracted. Features are prices for all stocks during one week. The outcome is whether the price on the first day of the following week is higher or lower/equal than the first day of the current week. This is done for all weeks.
+The system collects stcoks' historical prices publicly available on the internet, from [https://www.nasdaq.com/european-market-activity/shares](Nasdaq's webpages for european activity). 
+Then, it pre-processes the data to interpolate missing data with less consecutive missing points that 6 days per stock. Otherwise the data for the whole stock is removed. 
+From the pre-processed data, features and outcomes are extracted. Features are prices for all stocks during one week. The outcome is whether the price on the first day of the following week is higher or lower/equal than the first day of the current week. This is done for all weeks.
 The data is split into training and testing subsets. The training data is fed to an artificial neural network composed by two hidden layers with ReLU activation. The outcput layer is only one node, with sigmoid activation. The network is trained iteratively with the backpropagation technique, until it reaches the minimum error. The error is calculated with the "binary cross entropy" formula, which is appropriate for sigmoid activation. Also, the network is initialised with the Kaiming He technique, which is appropriate for ReLU. 
 
 A proof of concept is provided, with two modules:
