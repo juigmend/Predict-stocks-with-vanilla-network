@@ -35,4 +35,4 @@ The described system was tested with different combinations of data (e.g., time-
 
 ## What next?
 
-The next step would be to do a literature review to search for better ways to do the stock prediction and implement methods that have been shown to be successful. A preliminary literature reviwe shows that there are published studies that have addressed the problem with some success (Ji, S. (2024). "Predict stock market price by applying ANN, SVM and Random Forest").
+The next step would be to do a literature review to find better ways to do the stock prediction and implement methods that have been shown to be successful. A preliminary literature review shows that there are published studies that have addressed the problem with some success (Ji, S. (2024). "Predict stock market price by applying ANN, SVM and Random Forest").
