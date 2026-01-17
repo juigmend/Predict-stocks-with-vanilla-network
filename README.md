@@ -36,3 +36,9 @@ The described system was tested with different combinations of data (e.g., time-
 ## What next?
 
 The next step would be to do a literature review to find better ways to do the stock prediction and implement methods that have been shown to be successful. A preliminary literature review shows that there are published studies that have addressed the problem with some success (Ji, S. (2024). "Predict stock market price by applying ANN, SVM and Random Forest").
+
+## Thoughts
+
+This little project is the final optional assignment for the course "Elelemnts of AI - Building AI", organised by the University of Helsinki and MinnaLearn. My personal goal was to code a neural network for binary classification using only plain Python and Numpy, without dedicated libraries such as PyTorch or Scikit-learn. Before doing this project I did a slightly simpler [exercise on coding a neural network for regression tested with artificial data](https://github.com/juigmend/python-miscellaneous/blob/main/ANN_regression_DEMO.ipynb).
+
+The project of this repository is more challenging because it deals with real world data that is highly random (stocks). While it failed to achieve its technical goal, it succeeded in being a pedagogical tool for me. It helped me to understand how neural networks work, and their application to a specific real-world case. As a bonus, I learned plenty by coding the module that collects data from the internet using the Selenium web-scraper.
