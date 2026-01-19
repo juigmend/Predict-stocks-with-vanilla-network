@@ -14,7 +14,7 @@ The system predicts whether a stock's price will rise or decrease the following 
 
 ## How is it used?
 
-The user-defines parameters for the data to use such as market, segment, sector, currency, and time-span. From these data the user selects a stock to predict. On the last day of a given week the system will predict if at the beginning of the following week the stock's price will be higher or lower than at the beginning of the current week.
+The user defines parameters for the data to use such as market, segment, sector, currency, and time-span. From these data the user selects a stock to predict. On the last day of a given week the system will predict if at the beginning of the following week the stock's price will be higher or lower than at the beginning of the current week.
 
 ## Data sources and AI methods
 
